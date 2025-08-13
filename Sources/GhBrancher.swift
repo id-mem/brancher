@@ -5,7 +5,7 @@ import Foundation
 struct Main {
     static func main() async throws {
         guard CommandLine.arguments.count == 2 else {
-            print("Usage: \(CommandLine.arguments[0]) <path_to_initial_file>")
+            print("Usage: \(ProcessInfo.processInfo.processName) <path_to_initial_file>")
             exit(EXIT_FAILURE)
         }
 
